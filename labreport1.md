@@ -4,7 +4,7 @@ Install VScode (Visual Studio Code) [here](https://code.visualstudio.com/)
 
 Remotely Connecting
 ===================
-Once you've downloaded VS code. Open VS code and press `Control`/`Command` + `+` to open the terminal.
+Once you've downloaded VS code. Open VS code and press `Ctrl`/`command` + `+` to open the terminal.
 Now enter `ssh` followed by your account (ex. `cs15lwi23akm@ieng6.ucsd.edu`). For connecting for the first time, you will see the following message:
 
 ```
