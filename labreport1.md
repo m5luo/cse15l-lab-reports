@@ -23,3 +23,6 @@ Now, you have connected to a computer in the lab. When you enter commands, you c
 Trying Some Commands
 ====================
 
+![Image](https://images.app.goo.gl/SNc1iJEGdyb5jNf47)
+
+
