@@ -23,6 +23,6 @@ Now, you have connected to a computer in the lab. When you enter commands, you c
 Trying Some Commands
 ====================
 
-![Image](https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/cute-cat-photos-1593441022.jpg?crop=0.670xw:1.00xh;0.167xw,0&resize=640:*)
+![Image](Open VScode.png)
 
 
