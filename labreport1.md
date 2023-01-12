@@ -23,6 +23,6 @@ Now, you have connected to a computer in the lab. When you enter commands, you c
 Trying Some Commands
 ====================
 
-![Image](Open VScode.png)
+![Image](https://github.com/m5luo/cse15l-lab-reports/blob/15f56c5497b3aa842a8c6e630afd988e7a34f06e/Open%20VScode.png)
 
 
