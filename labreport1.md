@@ -1,13 +1,18 @@
 Installing VScode
 =================
 Install VScode (Visual Studio Code) [here](https://code.visualstudio.com/). The page will look something like the image below.
+
 ![Image](https://github.com/m5luo/cse15l-lab-reports/blob/ec5458560c01a5d56cde1a72b8018f87264f2ef4/downloading_vscode.png)
 
 Remotely Connecting
 ===================
 Once you've downloaded VS code. Open VS code and press `Ctrl`/`command` + `+` to open the terminal. The window will look like this.
+
 ![Image](https://github.com/m5luo/cse15l-lab-reports/blob/ec5458560c01a5d56cde1a72b8018f87264f2ef4/open_terminal.png)
+
+
 Now enter `ssh` followed by your account (ex. `cs15lwi23akm@ieng6.ucsd.edu`). Like this:
+
 ![Image](https://github.com/m5luo/cse15l-lab-reports/blob/ec5458560c01a5d56cde1a72b8018f87264f2ef4/sign_in.png)
 
 For connecting for the first time, you will see the following message:
@@ -20,10 +25,13 @@ Are you sure you want to continue connecting (yes/no/[fingerprint])?
 ```
 
 Type `yes`. Then it will ask you for your password. 
+
 ![Image](https://github.com/m5luo/cse15l-lab-reports/blob/24cc005e163b8d937c07f9c4bf08536228d402d8/enter_password.png)
 
 Enter your password (it will not display what you've entered as password, but you have entered it). The following will appear in the terminal once you've pressed `enter` after entering your password.
+
 ![Image](https://github.com/m5luo/cse15l-lab-reports/blob/24cc005e163b8d937c07f9c4bf08536228d402d8/after_passward.png)
+
 
 Now, you have connected to a computer in the lab. You are now ready to enter commands to view/manipulate files on the lab computer!
 
