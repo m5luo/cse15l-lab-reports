@@ -1,6 +1,6 @@
 Installing VScode
 =================
-Install VScode (Visual Studio Code) [here](https://code.visualstudio.com/)
+Install VScode (Visual Studio Code) [here](https://code.visualstudio.com/).
 
 Remotely Connecting
 ===================
