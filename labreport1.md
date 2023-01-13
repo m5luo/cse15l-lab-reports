@@ -4,6 +4,8 @@ Install VScode (Visual Studio Code) [here](https://code.visualstudio.com/). The 
 
 ![Image](https://github.com/m5luo/cse15l-lab-reports/blob/ec5458560c01a5d56cde1a72b8018f87264f2ef4/downloading_vscode.png)
 
+Click on the box Download for Windows, or click the drop-down menu for IOS Systems.
+
 Remotely Connecting
 ===================
 Once you've downloaded VS code. Open VS code and press `Ctrl`/`command` + `+` to open the terminal. The window will look like this.
@@ -33,12 +35,23 @@ Enter your password (it will not display what you've entered as password, but yo
 ![Image](https://github.com/m5luo/cse15l-lab-reports/blob/24cc005e163b8d937c07f9c4bf08536228d402d8/after_passward.png)
 
 
-Now, you have connected to a computer in the lab. You are now ready to enter commands to view/manipulate files on the lab computer!
+Now, you have connected to a computer in the lab and you are ready to enter commands to view/manipulate files on the lab computer!
 
 
 
 Trying Some Commands
 ====================
+
+Now that you have remote access, type in some commands view, swtich between or display files on the lab computer.
+
+Some commands to try are:
+* `cd`
+* `cd ~ `
+* `ls`
+* `ls -lat`
+* `pwd`
+
+Below is an example of using the command `pwd` (which displays the current directory's path).
 
 ![Image]()
 
