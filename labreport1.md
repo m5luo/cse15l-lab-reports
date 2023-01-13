@@ -53,6 +53,6 @@ Some commands to try are:
 
 Below is an example of using the command `pwd` (which displays the current directory's path).
 
-![Image]()
+![Image](https://github.com/m5luo/cse15l-lab-reports/blob/4d6d6c1e6d07d6dee4c5b2c91e65e2b88080be71/try_pwd.png)
 
 
