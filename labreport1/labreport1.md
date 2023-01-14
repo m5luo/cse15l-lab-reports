@@ -5,7 +5,7 @@ Installing VScode
 -----------------
 Install VScode (Visual Studio Code) [here](https://code.visualstudio.com/). The page will look something like the image below.
 
-![Image](https://github.com/m5luo/cse15l-lab-reports/blob/bde73dd46a5bfe5f3403eb09a4fb514762416420/labreport1/downloading_vscode.png)
+![Image](downloading_vscode.png)
 
 Click on the box Download for Windows, or click the drop-down menu for IOS Systems.
 
