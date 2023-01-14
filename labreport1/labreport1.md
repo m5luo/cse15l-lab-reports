@@ -1,5 +1,8 @@
+Lab Report 1: Remote Access and Filesystem
+==========================================
+
 Installing VScode
-=================
+-----------------
 Install VScode (Visual Studio Code) [here](https://code.visualstudio.com/). The page will look something like the image below.
 
 ![Image](https://github.com/m5luo/cse15l-lab-reports/blob/bde73dd46a5bfe5f3403eb09a4fb514762416420/labreport1/downloading_vscode.png)
@@ -7,7 +10,7 @@ Install VScode (Visual Studio Code) [here](https://code.visualstudio.com/). The 
 Click on the box Download for Windows, or click the drop-down menu for IOS Systems.
 
 Remotely Connecting
-===================
+-------------------
 Once you've downloaded VS code. Open VS code and press `Ctrl`/`command` + `+` to open the terminal. The window will look like this.
 
 ![Image](https://github.com/m5luo/cse15l-lab-reports/blob/bde73dd46a5bfe5f3403eb09a4fb514762416420/labreport1/open_terminal.png)
@@ -40,7 +43,7 @@ Now, you have connected to a computer in the lab and you are ready to enter comm
 
 
 Trying Some Commands
-====================
+--------------------
 
 Now that you have remote access, type in some commands view, swtich between or display files on the lab computer.
 
