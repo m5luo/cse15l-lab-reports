@@ -6,12 +6,12 @@ Part 1
 
 Below is a screenshot of my `StringServer` class.
 
-![stringservercode]()
+![stringservercode](string_server_code.png)
 
 Here are some screenshots of me launching the web server and using the path `/add-message` to display messages on the server.
 
-![compile&run]()
-![nopath]()
+![compile&run](compile_run.png)
+![nopath](no_path.png)
 
 The sequence of the two screenshots of above shows me compiling and running `StringServer`. Java code always start in the main method. Since I provided a port number, the `if` statement evaluates to false, and the `if` block is skipped. Next, the `int` variable `port` is set to `6001`, and the `start` method in `Server` is called to create the web server and provide us with an accessible address. `port` (with value `6001`) and a new Handler object are passed in as parameter. 
 
@@ -19,7 +19,7 @@ The Handler method creates a new ArrayList object (that is currently empty). And
 
 Now I will give it a path:
 
-![today]()
+![today](one_message.png)
 
 Above, by providing a path, the `else if` condition is checked in `handleRequest`. It compares the path given with `/add-message`. In this example the result from the comparison would be true, entering the `else if` block.
 
@@ -27,7 +27,7 @@ In the `else if` block, it will first create a new array object and store the qu
 
 After that, it checks that element 0 is `s`, which is also true here, so the input after `=` in the query (now stored as element 1 in the array) is then stored into an ArrayList that will get printed by the method.
 
-![fullmessage]()
+![fullmessage](full_message.png)
 
 In the screenshot above, you can see several lines of messages. Each time you type in a path, the input in the query sfter `s=` is stored as a new element in the ArrayList through the same process as described for the first message ("Today"). Then they are each printed in a seperate line and displayed on the web server.
 
@@ -63,7 +63,7 @@ assertArrayEquals(new int[]{2, 1, 0}, input2);
 
 JUnit gives the folowing message when both blocks of code above is tested:
 
-![symptoms]()
+![symptoms](symptoms.png)
 
 As you can see, only the second test results in an failed test.
 
