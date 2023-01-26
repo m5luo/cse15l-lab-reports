@@ -65,7 +65,7 @@ JUnit gives the folowing message when both blocks of code above is tested:
 
 ![symptoms](symptoms.png)
 
-As you can see, only the second test results in an failed test.
+As you can see, only the second test failed.
 
 The problem in the original bug-producing program is that the array is being updated as its data is still being referenced. So we need to create a temporary array and deep copy the original array's data over. Then reverse the order of the array by updating its indexs using data from the temporary array. 
 
