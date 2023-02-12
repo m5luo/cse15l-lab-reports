@@ -56,7 +56,7 @@ Above, I used `-c` on `Kauffeman/*.txt` so it outputted all the files that match
 
 Here, I specified the text file `ch1.txt` so now it only print a number that represents the count for the pattern, without repeating the file name.
 
-![grep-i-c]()
+![grep-i-c](grep-i-c.png)
 
 Even though "Damon" is a name and shows up in the text files with a capitalized "D," here when we add `-i` and pass in "damon" and input pattern, "Damon" is also recognized as a match. 
 
