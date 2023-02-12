@@ -39,19 +39,19 @@ Exmaple 1:
 
 ![grep-l1](grep-l1.png)
 
-Here, I gave it the pattern "Bahamas" and used `*` so that it scans all text files in the third layer of directory under `skills-demo1-data`. With this command, it returend only the file names of all files that contained the pattern and not each line.
+Here, I gave it the pattern "Bahamas" and used `*` so that it scans all text files in the third layer of directory under `skills-demo1-data`. With this command, it returned only the file names of all files that contained the pattern and not each line.
 
 Example 2:
 
 ![grep-l-i](grep-l-i.png)
 
-Here is an example of using `-i` and `-l` together. By using `-i`, even though I typed "bahamas" wihtout capitalizing teh first letter, it still recognized "Bahamas" in each file and outputted them as files with matching pattern.
+Here is an example of using `-i` and `-l` together. By using `-i`, even though I typed "bahamas" without capitalizing the first letter, it still recognized "Bahamas" in each file and outputted them as files with matching pattern.
 
 Example 3:
 
 ![grep-l2](grep-l2.png)
 
-Here is just another example of using `-l`. It displayed file names of all the files that contains the pattern instead of each line. You can see the pattern does not have to be a word (that would be followed by a space) but can also be part of a word.
+Here is just another example of using `-l`. It displayed file names of all the files that contains the pattern instead of each line. You can see the pattern does not have to be a complete word (that would be followed by a space) but can also be part of a word.
 
 
 `-c`
@@ -63,7 +63,7 @@ Example 1:
 
 ![grep-c1](grep-c1.png)
 
-Above, I used `-c` on `Kauffeman/*.txt` so it outputted all the files that match that pattern for file name followed by the count for the pattern `who` in each file. 
+Above, I used `-c` on `Kauffeman/*.txt` so it outputted all the files that match the pattern for file path followed by the count for the pattern `who` in each file. 
 
 Example 2:
 
@@ -75,7 +75,7 @@ Example 3:
 
 ![grep-c-i](grep-c-i.png)
 
-Here I used `-c` alone and then with `-i` on the pattern "damon". From the result of the first `grep` we can see that the pattern "damon" doesn't actually exist in the text file (count returned is `0`). But if we add `-i,` although "Damon" is a name and shows up in the text files with a capitalized "D," "damon" is now also recognized as a match, and we can see that the name appears 5 times in the text. 
+Here I used `-c` alone and then with `-i` on the pattern "damon". From the result of the first `grep` we can see that the pattern "damon" doesn't actually exist in the text file (count returned is `0`). But if we add `-i,` although "Damon" is a name and shows up in the text files with a capitalized "D", "damon" is now also recognized as a match, and we can see that the name appears 5 times in the text. 
 
 
 `-v`
