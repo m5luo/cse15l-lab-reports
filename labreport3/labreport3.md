@@ -58,7 +58,7 @@ Here, I specified the text file `ch1.txt` so now it only print a number that rep
 
 ![grep-c-i](grep-c-i.png)
 
-Even though "Damon" is a name and shows up in the text files with a capitalized "D," here when we add `-i` and pass in "damon" and input pattern, "Damon" is also recognized as a match. 
+From the result of the first `grep` we can see that the pattern "damon" doesn't actually exist in the text file (count returned is `0`). But if we add `-i,` although "Damon" is a name and shows up in the text files with a capitalized "D," "damon" is now also recognized as a match, and we can see that the name appears 5 times in the text. 
 
 `-v`
 ----
