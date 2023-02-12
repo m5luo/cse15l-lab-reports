@@ -21,13 +21,13 @@ Example 1:
 
 ![grep-i1](grep-i1.png)
 
-Here, I typed in the names in lower-case, but it still recognized "Bob and Sharon" as matching pattern.
+Here, since `-i` ignore the case of input pattern, even though I typed in the names in lower-case, it still recognized "Bob and Sharon" as matching pattern.
 
 Example 2: 
 
 ![grep-i2](grep-i2.png)
 
-Here, I typed in the names in all caps, but it still recognized "Noah and Suzanne" as matching pattern. 
+Similar the previous example, case is ignored, so even though the pattern is given in all caps, "Noah and Suzanne" is still recognized as matching pattern. 
 
 
 `-l`
@@ -97,7 +97,7 @@ Example 2:
 
 ![grep-v-i](grep-v-i.png)
 
-As expected, if we use `-i -v`, the last line which conatins "The" is now also considered a match pattern (as we ignore the case). Therefore it is no longer an output of the new command as `-v` outputs all lines *not* containing the pattern.
+As expected, if we use `-i -v`, the last line which contains "The" is now also considered a match pattern (as we ignore the case). Therefore it is no longer an output of the new command as `-v` outputs all lines *not* containing the pattern.
 
 
 Source/Reference: [grep_manual](https://man7.org/linux/man-pages/man1/grep.1.html)
