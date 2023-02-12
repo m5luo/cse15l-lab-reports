@@ -63,7 +63,7 @@ Example 1:
 
 ![grep-c1](grep-c1.png)
 
-Above, I used `-c` on `Kauffeman/*.txt` so it outputted all the files that match the pattern for file path followed by the count for the pattern `who` in each file. 
+Above, I used `-c` on `Kauffeman/*.txt` so it outputted all the files that match the pattern for file path followed by the count for the pattern "who" in each file. 
 
 Example 2:
 
