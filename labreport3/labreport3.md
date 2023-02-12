@@ -1,24 +1,29 @@
 Lab Report 3: Researching Commands - `grep`
 ===========================================
 
-We will look at 4 different options that can be used with the `grep` command: `-l`, `-f`, `-v`, and `-c`.
+We will look at 4 different options that can be used with the `grep` command: `-i`, `-l`, `-c`, and `-v`.
 
-First, for context, the `grep` command is used as such:
+First, for context, the `grep` command is used in the following format:
 
 `grep "PATTERN" *FILENAME*`
 
-On its own, it returns all the lines that contains the specified pattern.
+On its own, it returns all the lines in a file that contains the specified pattern.
 
 Now let's look at what happens when you follow `grep` with other options.
+
 
 `-i`
 ----
 
 `-i` ignores case of input pattern. 
 
+Example 1:
+
 ![grep-i1](grep-i1.png)
 
 Here, I typed in the names in lower-case, but it still recognized "Bob and Sharon" as matching pattern.
+
+Example 2: 
 
 ![grep-i2](grep-i2.png)
 
@@ -30,9 +35,13 @@ Here, I typed in the names in all caps, but it still recognized "Noah and Suzann
 
 Instead of the normal output (lines that contains the pattern), `-l` will print only the file name of the file that contains the pattern. In the background, each file is scanned and scanning stops as soon as first match is found.
 
+Exmaple 1:
+
 ![grep-l1](grep-l1.png)
 
-Here, I gave it the pattern "Bahamas" and it returend only the file names of all files that contained the pattern and not each line.
+Here, I gave it the pattern "Bahamas" and used `*` so that it scans all text files in the forth layer of directory. With this command, it returend only the file names of all files that contained the pattern and not each line.
+
+Example 2:
 
 ![grep-l-i](grep-l-i.png)
 
