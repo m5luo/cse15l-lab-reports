@@ -32,6 +32,12 @@ Example 2:
 
 ![grep-i2](grep-i2.png)
 
+```
+$ grep -i "NOAH AND SUZANNE" */*/*/Berk/ch1.txt
+•Noah and Suzanne, parents of a 2-year-old: When our parents were raising us, they seemed conﬁdent of their power and inﬂuence. Recently we read that how children turn out is mostly written in their genes; there’s little we as parents can do about it. Does parenting really matter?
+Downplaying the role of parents—suggesting that they are relatively unimportant in socialization—does both families and society a disservice. It leads parents, like Noah and Suzanne, who are on the cusp of a dramatic period of development in their 2-year-old son’s life, to express grave doubts about their own importance. Harvard University psychologist Howard Gardner notes:
+```
+
 Similar the previous example, case is ignored, so even though the pattern is given in all caps, "Noah and Suzanne" is still recognized as matching pattern. 
 
 
