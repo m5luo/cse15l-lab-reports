@@ -1,7 +1,7 @@
 Lab Report 3: Researching Commands - `grep`
 ===========================================
 
-We will look at 4 different options that can be used with the `grep` command: `-i`, `-l`, `-c`, and `-v`.
+We will look at 4 different options that can be used with the `grep` command: `-i`, `-l`, `-c`, and `-v`. There will also be some instances when nultiple options are used in one command, the order in which they appear does not effect the output.
 
 First, for context, the `grep` command is used in the following format:
 
@@ -50,6 +50,16 @@ Exmaple 1:
 
 ![grep-l1](grep-l1.png)
 
+```
+$ grep -l "Bahamas" */*/*/*.txt
+written_2/travel_guides/berlitz1/WhatToFWI.txt
+written_2/travel_guides/berlitz2/Bahamas-History.txt
+written_2/travel_guides/berlitz2/Bahamas-Intro.txt
+written_2/travel_guides/berlitz2/Bahamas-WhatToDo.txt
+written_2/travel_guides/berlitz2/Bahamas-WhereToGo.txt
+written_2/travel_guides/berlitz2/Canada-WhereToGo.txt
+```
+
 Here, I gave it the pattern "Bahamas" and used `*` so that it scans all text files in the third layer of directory under `skills-demo1-data`. With this command, it returned only the file names of all files that contained the pattern and not each line.
 
 Example 2:
@@ -70,6 +80,21 @@ Example 3:
 
 ![grep-l2](grep-l2.png)
 
+```
+$ grep -l "Beij" */*/*/*.txt
+written_2/travel_guides/berlitz1/HistoryHongKong.txt
+written_2/travel_guides/berlitz1/HistoryMalaysia.txt
+written_2/travel_guides/berlitz1/IntroHongKong.txt
+written_2/travel_guides/berlitz1/WhatToHongKong.txt
+written_2/travel_guides/berlitz2/Beijing-History.txt
+written_2/travel_guides/berlitz2/Beijing-WhatToDo.txt
+written_2/travel_guides/berlitz2/Beijing-WhereToGo.txt
+written_2/travel_guides/berlitz2/China-History.txt
+written_2/travel_guides/berlitz2/China-WhatToDo.txt
+written_2/travel_guides/berlitz2/China-WhereToGo.txt
+written_2/travel_guides/berlitz2/Cuba-WhereToGo.txt
+```
+
 Here is just another example of using `-l`. It displayed file names of all the files that contains the pattern instead of each line. You can see the pattern does not have to be a complete word (that would be followed by a space) but can also be part of a word.
 
 
@@ -82,17 +107,45 @@ Example 1:
 
 ![grep-c1](grep-c1.png)
 
+```
+$ grep -c "who" */*/*/Kauffman/*.txt
+written_2/non-fiction/OUP/Kauffman/ch1.txt:4
+written_2/non-fiction/OUP/Kauffman/ch10.txt:9
+written_2/non-fiction/OUP/Kauffman/ch3.txt:13
+written_2/non-fiction/OUP/Kauffman/ch4.txt:14
+written_2/non-fiction/OUP/Kauffman/ch5.txt:5
+written_2/non-fiction/OUP/Kauffman/ch6.txt:12
+written_2/non-fiction/OUP/Kauffman/ch7.txt:16
+written_2/non-fiction/OUP/Kauffman/ch8.txt:6
+written_2/non-fiction/OUP/Kauffman/ch9.txt:11
+```
+
 Above, I used `-c` on `Kauffeman/*.txt` so it outputted all the files that match the pattern for file path followed by the count for the pattern "who" in each file. 
 
 Example 2:
 
 ![grep-c2](grep-c2.png)
 
+```
+$ grep -c "who" */*/*/Kauffman/ch1.txt
+4
+```
+
 Here, I specified the text file `ch1.txt` so now it only print a number that represents the count for the pattern, without repeating the file name.
 
 Example 3:
 
 ![grep-c-i](grep-c-i.png)
+
+```
+$ grep -c "damon" */*/*/Berk/ch1.txt
+0
+```
+
+```
+$ grep -i -c "damon" */*/*/Berk/ch1.txt
+5
+```
 
 Here I used `-c` alone and then with `-i` on the pattern "damon". From the result of the first `grep` we can see that the pattern "damon" doesn't actually exist in the text file (count returned is `0`). But if we add `-i,` although "Damon" is a name and shows up in the text files with a capitalized "D", "damon" is now also recognized as a match, and we can see that the name appears 5 times in the text. 
 
@@ -106,15 +159,54 @@ Example 1:
 
 ![grep-v1](grep-v1.png)
 
+```
+$ grep -v "the" */*/*/Bahamas-History.txt
+
+
+
+
+A Brief History
+Colonization and Piracy
+The American Revolutionary War
+Emancipation and Decline
+Civil War Blockade Running
+The 20th Century
+
+
+
+
+```
+
 Here you can see there is a large space before the system outputs all the lines that does not contain "the". Actually the empty space are also representative of lines without "the", they are just literally the empty lines that are used to distinguish between paragrahps. Let's use `-v -c` to confirm:
 
 ![grep-v-c](grep-v-c.png)
+
+```
+$ grep -v -c "the" */*/*/Bahamas-History.txt
+13
+```
 
 Here you can see the output indicates there are 13 lines with out "the", but we can only see 5 lines above, which means there are 8 empty lines that also do not contain "the" that were printed.
 
 Example 2:
 
 ![grep-v-i](grep-v-i.png)
+
+```
+$ grep -v -i "the" */*/*/Bahamas-History.txt
+
+
+
+
+A Brief History
+Colonization and Piracy
+Emancipation and Decline
+Civil War Blockade Running
+
+
+
+
+```
 
 As expected, if we use `-i -v`, the last line which contains "The" is now also considered a match pattern (as we ignore the case). Therefore it is no longer an output of the new command as `-v` outputs all lines *not* containing the pattern.
 
