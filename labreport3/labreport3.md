@@ -19,8 +19,6 @@ Now let's look at what happens when you follow `grep` with other options.
 
 Example 1:
 
-![grep-i1](grep-i1.png)
-
 ```
 $ grep -i "bob and sharon" */*/*/Berk/ch1.txt
 •Bob and Sharon, parents of a 4-year-old: Our daughter, Lydia, could recite her ABCs and count from 1 to 20 by age 2 1/2. When we looked for a preschool, many programs appeared to do little more than let children play, so we chose one with lots of emphasis on academics. To me, Lydia’s preschool seems like great preparation for kindergarten and ﬁrst grade, but each morning, Lydia hates to go. Why is Lydia, who’s always been an upbeat, curious child, so unhappy?
@@ -29,8 +27,6 @@ $ grep -i "bob and sharon" */*/*/Berk/ch1.txt
 Here, since `-i` ignore the case of input pattern, even though I typed in the names in lower-case, it still recognized "Bob and Sharon" as matching pattern.
 
 Example 2: 
-
-![grep-i2](grep-i2.png)
 
 ```
 $ grep -i "NOAH AND SUZANNE" */*/*/Berk/ch1.txt
@@ -47,8 +43,6 @@ Similar the previous example, case is ignored, so even though the pattern is giv
 Instead of the normal output (lines that contains the pattern), `-l` will print only the file name of the file that contains the pattern. In the background, each file is scanned and scanning stops as soon as first match is found.
 
 Exmaple 1:
-
-![grep-l1](grep-l1.png)
 
 ```
 $ grep -l "Bahamas" */*/*/*.txt
@@ -78,8 +72,6 @@ Here is an example of using `-i` and `-l` together. By using `-i`, even though I
 
 Example 3:
 
-![grep-l2](grep-l2.png)
-
 ```
 $ grep -l "Beij" */*/*/*.txt
 written_2/travel_guides/berlitz1/HistoryHongKong.txt
@@ -105,8 +97,6 @@ Instead of standard output, `-c` will output a count: the number of times the pa
 
 Example 1:
 
-![grep-c1](grep-c1.png)
-
 ```
 $ grep -c "who" */*/*/Kauffman/*.txt
 written_2/non-fiction/OUP/Kauffman/ch1.txt:4
@@ -124,8 +114,6 @@ Above, I used `-c` on `Kauffeman/*.txt` so it outputted all the files that match
 
 Example 2:
 
-![grep-c2](grep-c2.png)
-
 ```
 $ grep -c "who" */*/*/Kauffman/ch1.txt
 4
@@ -134,8 +122,6 @@ $ grep -c "who" */*/*/Kauffman/ch1.txt
 Here, I specified the text file `ch1.txt` so now it only print a number that represents the count for the pattern, without repeating the file name.
 
 Example 3:
-
-![grep-c-i](grep-c-i.png)
 
 ```
 $ grep -c "damon" */*/*/Berk/ch1.txt
@@ -157,8 +143,6 @@ Here I used `-c` alone and then with `-i` on the pattern "damon". From the resul
 
 Example 1:
 
-![grep-v1](grep-v1.png)
-
 ```
 $ grep -v "the" */*/*/Bahamas-History.txt
 
@@ -177,20 +161,16 @@ The 20th Century
 
 ```
 
-Here you can see there is a large space before the system outputs all the lines that does not contain "the". Actually the empty space are also representative of lines without "the", they are just literally the empty lines that are used to distinguish between paragrahps. Let's use `-v -c` to confirm:
-
-![grep-v-c](grep-v-c.png)
+Here you can see there is a large space before the system outputs all the lines that does not contain "the". Actually the empty space are also representative of lines without "the". They are literally the empty lines that are used to distinguish between paragraphs. Let's use `-v -c` to confirm:
 
 ```
 $ grep -v -c "the" */*/*/Bahamas-History.txt
 13
 ```
 
-Here you can see the output indicates there are 13 lines with out "the", but we can only see 5 lines above, which means there are 8 empty lines that also do not contain "the" that were printed.
+As expected, the output indicates there are 13 distinct lines without "the" in the text file. But we can only see 5 lines above with text, which means there are 8 empty lines that also do not contain "the" that were printed.
 
 Example 2:
-
-![grep-v-i](grep-v-i.png)
 
 ```
 $ grep -v -i "the" */*/*/Bahamas-History.txt
@@ -208,7 +188,7 @@ Civil War Blockade Running
 
 ```
 
-As expected, if we use `-i -v`, the last line which contains "The" is now also considered a match pattern (as we ignore the case). Therefore it is no longer an output of the new command as `-v` outputs all lines *not* containing the pattern.
+As we are expecting, by using `-i -v`, the last line which contains "The" is now also considered a match pattern (as we ignore the case). Therefore it is no longer an output of the new command as `-v` outputs all lines *not* containing the pattern.
 
 
 Source/Reference: [grep_manual](https://man7.org/linux/man-pages/man1/grep.1.html)
