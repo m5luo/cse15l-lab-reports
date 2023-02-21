@@ -21,6 +21,11 @@ Example 1:
 
 ![grep-i1](grep-i1.png)
 
+```
+$ grep -i "bob and sharon" */*/*/Berk/ch1.txt
+•Bob and Sharon, parents of a 4-year-old: Our daughter, Lydia, could recite her ABCs and count from 1 to 20 by age 2 1/2. When we looked for a preschool, many programs appeared to do little more than let children play, so we chose one with lots of emphasis on academics. To me, Lydia’s preschool seems like great preparation for kindergarten and ﬁrst grade, but each morning, Lydia hates to go. Why is Lydia, who’s always been an upbeat, curious child, so unhappy?
+```
+
 Here, since `-i` ignore the case of input pattern, even though I typed in the names in lower-case, it still recognized "Bob and Sharon" as matching pattern.
 
 Example 2: 
@@ -42,8 +47,6 @@ Exmaple 1:
 Here, I gave it the pattern "Bahamas" and used `*` so that it scans all text files in the third layer of directory under `skills-demo1-data`. With this command, it returned only the file names of all files that contained the pattern and not each line.
 
 Example 2:
-
-![grep-l-i](grep-l-i.png)
 
 ```
 $ grep -i -l "bahamas" */*/*/*.txt
