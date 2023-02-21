@@ -45,6 +45,16 @@ Example 2:
 
 ![grep-l-i](grep-l-i.png)
 
+```
+$ grep -i -l "bahamas" */*/*/*.txt
+written_2/travel_guides/berlitz1/WhatToFWI.txt
+written_2/travel_guides/berlitz2/Bahamas-History.txt
+written_2/travel_guides/berlitz2/Bahamas-Intro.txt
+written_2/travel_guides/berlitz2/Bahamas-WhatToDo.txt
+written_2/travel_guides/berlitz2/Bahamas-WhereToGo.txt
+written_2/travel_guides/berlitz2/Canada-WhereToGo.txt
+```
+
 Here is an example of using `-i` and `-l` together. By using `-i`, even though I typed "bahamas" without capitalizing the first letter, it still recognized "Bahamas" in each file and outputted them as files with matching pattern.
 
 Example 3:
