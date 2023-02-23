@@ -57,15 +57,15 @@ Edit the code file
 
 1. To edit code file, I typed `nano L`, then <`Tab`>, which autofilled `ListExamples.`, then I just typed `java` and <`Enter`>.
 2. Pressed <`Ctrl`><`W`> to search, then typed `merge` and <`Enter`> (as that is the method the test files tested). 
-3. My cursor was moved down to the first "merge" in the file. Next I pressed the <`down`> 10 times and <`right`> 2 times to reach where the bug is.
+3. My cursor was moved down to the first "merge" in the file. Next I pressed the <`down`> 19 times and <`left`> 6 times to reach where the bug is.
 4. I pressed <`Backspace`> and typed `2` to fix the bug.
 5. I pressed <`Ctrl`><`O`> and <`Enter`> to save my edits, then <`Ctrl`><`X`> to exit nano.
 
 Run again
 ---------
 
-1. Since the compiling and running commands are now in my search history, I pressed <`up`> 4 times and <`enter`> to compile
-2. Similarly, I pressed <`up`> 5 times and <`enter`> again to run.
+1. Since the compiling and running commands are now in my search history, I pressed <`up`> 3 times and <`enter`> to compile
+2. Similarly, I pressed <`up`> 3 times and <`enter`> again to run.
 
 As you can see, the test pass now.
 
