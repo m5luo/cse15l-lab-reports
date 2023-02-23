@@ -1,4 +1,6 @@
-In this report, I will take you through the lab tasks step by step. 
+Lab Report 4: 
+
+In this report, I will walk through each step I took to complete the week seven lab task. 
 
 First, below is a summarized list of all the tasks involved. 
 
@@ -21,29 +23,29 @@ For this step, you simply open the hyperlinked "lab7" from the course website, a
 Log into ieng6
 --------------
 
-1. Type `ssh` <***space***> followed by my ieng6 login: `cs15lwi23akm@ieng6.ucsd.edu`.
-2. Since I previously set up my account so that ti will no longer ask me to type in a password, it automatically connects remotely and skips the password process.
+1. Typed `ssh` <`space`> followed by my ieng6 login: `cs15lwi23akm@ieng6.ucsd.edu`.
+2. Since I previously set up my account, it automatically connected remotely and without having me type in my password.
 
 Clone your fork of the repository
 ---------------------------------
 
-1. go to the cloned repository on the gitbud page.
-2. clicked the green dropdown menu labeled "Code"
-3. switch to the "SSH" tab, and copy the link (by clicking on the overlapping squares button on the right).
-4. go back to the terminal and type `git clone` followed by <***space***> and <***ctrl***><***v***> (which pastes the url to the terminal).
-5. press <***enter***>
+1. I went to the forked repository on the github webpage.
+2. Clicked on the green drop-down menu labeled "Code"
+3. Switched to the "SSH" tab, and copied the link (by clicking on the overlapping squares button on the right).
+4. I went back to my terminal and typed `git clone` followed by <`space`> and <`Ctrl`><`v`> (which pasted the url to the terminal).
+5. Pressed <`Enter`>
 
-As you can see, I have now coned the repository onto my ieng6 machine.
+As you can see, I have now cloned the repository onto my ieng6 machine.
 
 Running the tests
 -----------------
-1. `ls` to check that "lab7" now exists
-2. type `cd lab7` then <***enter***>
-3. `ls` again to see what files exist inside the directory
-4. copy using <***ctrl***><***c***> the code to compile JUnit test from couse webpage week 3 (`javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java`).
-5. paste using <***ctrl***><***v***>, then <***enter***> to compile java files inside lab7.
-6. use <***ctrl***><***c***> again to copy the command to run `TestListExamples` (`java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore`).
-7. <***ctrl***><***v***> to paste onto the terminal, then type `TestListExamples` and <***enter***>
+1. I typed `ls` then <`Enter`> to check that "lab7" now exists as a directory in my ieng6 home directory.
+2. Typed `cd lab7` then <`Enter`> to change into lab7 directory.
+3. `ls` again to see what files existed inside the directory.
+4. Using <`Ctrl`><`C`>, I copied the code to compile JUnit test from course webpage week 3 (`javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java`).
+5. Pasted using <`Ctrl`><`V`>, then <`Enter`> to compile java files inside lab7.
+6. Used <`Ctrl`><`C`> again to copy the command to run `TestListExamples` (`java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore`).
+7. <`Ctrl`><`V`> again to paste onto the terminal, then typed `TestListExamples` and <`Enter`>
 
 
 Here, you can see that one test failed.
@@ -51,5 +53,9 @@ Here, you can see that one test failed.
 Edit the code file
 ------------------
 
-1. to edit code file, type `nano L`, then <***tab***>, it would have autofilled `ListExamples.` then just type `java` and <***enter***>
-2. 
+1. To edit code file, I typed `nano L`, then <`Tab`>, which autofilled `ListExamples.`, then I just typed `java` and <`Enter`>.
+2. Pressed <`Ctrl`><`W`> to search, then typed `merge` and <`Enter`> (as that is the method the test files tested). 
+3. My cursor was moved down to the first "merge" in the file. Next I pressed the <`down`> 10 times and <`right`> 2 times to reach where the bug is.
+4. I pressed <`Backspace`> and typed `2` to fix the bug.
+5. I pressed <`Ctrl`><`O`> and <Enter> to save my edits, then <`Ctrl`><`X`> to exit nano.
+
