@@ -1,4 +1,5 @@
-Lab Report 4: 
+Lab Report 4: Lab Tesks Step by Step
+-------------------------------------
 
 In this report, I will walk through each step I took to complete the week seven lab task. 
 
@@ -39,6 +40,7 @@ As you can see, I have now cloned the repository onto my ieng6 machine.
 
 Running the tests
 -----------------
+
 1. I typed `ls` then <`Enter`> to check that "lab7" now exists as a directory in my ieng6 home directory.
 2. Typed `cd lab7` then <`Enter`> to change into lab7 directory.
 3. `ls` again to see what files existed inside the directory.
@@ -57,5 +59,22 @@ Edit the code file
 2. Pressed <`Ctrl`><`W`> to search, then typed `merge` and <`Enter`> (as that is the method the test files tested). 
 3. My cursor was moved down to the first "merge" in the file. Next I pressed the <`down`> 10 times and <`right`> 2 times to reach where the bug is.
 4. I pressed <`Backspace`> and typed `2` to fix the bug.
-5. I pressed <`Ctrl`><`O`> and <Enter> to save my edits, then <`Ctrl`><`X`> to exit nano.
+5. I pressed <`Ctrl`><`O`> and <`Enter`> to save my edits, then <`Ctrl`><`X`> to exit nano.
+
+Run again
+---------
+
+1. Since the compiling and running commands are now in my search history, I pressed <`up`> 4 times and <`enter`> to compile
+2. Similarly, I pressed <`up`> 5 times and <`enter`> again to run.
+
+As you can see, the test pass now.
+
+Commit with message and push
+----------------------------
+
+1. I typed `git add ListExamples.java` (since that is the file that was edited/updated) then <`enter`>.
+2. Then I typed `git commit -m "ListExamples.java updated"` and <`enter`> to commited my edits.
+3. Next I typed `git push` and <`enter`> to update my git repository.
+
+As you can see, ListExamples.java in my github is now also updated.
 
