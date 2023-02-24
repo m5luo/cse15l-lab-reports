@@ -95,7 +95,7 @@ Commit with message and push
 
 ![add_commit_push](add_commit_push.png)
 
-![git_repo_updated](git_repo_updated.png)
+![git_repo_updated](github_repo_updated.png)
 
 As you can see, ListExamples.java in my github is now also updated.
 
