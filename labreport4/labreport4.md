@@ -1,5 +1,5 @@
-Lab Report 4: Lab Tesks Step by Step
--------------------------------------
+Lab Report 4: Lab Tasks Step by Step
+====================================
 
 In this report, I will walk through each step I took to complete the week seven lab task. 
 
