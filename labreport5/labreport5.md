@@ -8,7 +8,8 @@ The bash script takes in a directory that contains a java file called ListExampl
 
 I tested this grading script on all the examples java files given on the course website. Below are detailed outputs of the sciprt given each java file.
 
-#1. File from Lab 3
+File 1: File from Lab 3
+-----------------------
 Expect behavior:
 - File: Found.
 - Compile: Successful.
@@ -18,8 +19,8 @@ Expect behavior:
 Screenshot of the actual test run:
 ![lab3](lab3_.png)
 
-2. Corrected File
------------------
+File 2: Corrected File
+----------------------
 Expect behavior:
 - File: Found.
 - Compile: Successful.
@@ -29,8 +30,8 @@ Expect behavior:
 Screenshot of the actual test run:
 ![corrected](corrected.png)
 
-3. File with Compile Error
---------------------------
+File 3: File with Compile Error
+-------------------------------
 - File: Found.
 - Compile: Failed due to syntax error: missing semi-colon on line 15.
 - Method Signature: Not applicatble as bash script exists as soon as compilation fails.
@@ -39,8 +40,8 @@ Screenshot of the actual test run:
 Screenshot of the actual test run:
 ![compile-error](compile-error.png)
 
-4. Different Method Signature
------------------------------
+File 4: Different Method Signature
+----------------------------------
 - File: Found
 - Compile: Successful
 - Method Signature: Does not match the expected method signature as the parameters were switched.
@@ -49,8 +50,8 @@ Screenshot of the actual test run:
 Screenshot of the actual test run:
 ![signature](signature.png)
 
-5. Different Filename
----------------------
+File 5: Different Filename
+--------------------------
 - File: Not found as filename does not match expected.
 - Compile: Not applicable as bas script exists as soon as file is not found.
 - Method Signature: Not applicable as bas script exists as soon as file is not found.
@@ -59,8 +60,8 @@ Screenshot of the actual test run:
 Screenshot of the actual test run:
 ![filename](filename.png)
 
-6. File Nested Inside Another Directory
----------------------------------------
+File 6: File Nested Inside Another Directory
+--------------------------------------------
 - File: Not found as file is nested inside another directory.
 - Compile: Not applicable as bas script exists as soon as file is not found.
 - Method Signature: Not applicable as bas script exists as soon as file is not found.
@@ -69,8 +70,8 @@ Screenshot of the actual test run:
 Screenshot of the actual test run:
 ![nested](nested.png)
 
-7. Subtle Mistakes in Code
---------------------------
+File 7: Subtle Mistakes in Code
+-------------------------------
 - File: Found.
 - Compile: Successful.
 - Method Signature: Match.
