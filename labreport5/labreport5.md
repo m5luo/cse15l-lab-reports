@@ -4,8 +4,7 @@ Lab Report 5: Grading Script
 Here is the link to my grading bash script: [grader](grade1.sh).
 
 A little summary of the code:  
-The bash script takes in a directory that contains a java file called `ListExamples.java`.   
-It checks the following before running a tester: 
+The bash script takes in a directory that contains a java file called `ListExamples.java`. It checks the following before running a tester: 
  - the file with the right name is found,
  - it compiles successfully,
  - has a matching method signature (so the tester will be able to call the method).  
