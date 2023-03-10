@@ -3,12 +3,12 @@ Lab Report 5: Grading Script
 
 Here is the link to my grading bash script: [grader](grade1.sh).
 
-A little summary of the code:
-The bash script takes in a directory that contains a java file called `ListExamples.java`. 
+A little summary of the code:  
+The bash script takes in a directory that contains a java file called `ListExamples.java`.   
 It checks the following before running a tester: 
  - the file with the right name is found,
  - it compiles successfully,
- - has a matching method signature (so the tester will be able to call the method).
+ - has a matching method signature (so the tester will be able to call the method).  
 If any of the process above fails, a massage indicating which process failed will be printed, followed by possible error messages from the java compiler, then the bash script is exited immediately. If all the previous steps proceed succesfully, the tester will run to see if the code passes the tests. Then a score will be printed: (number of successful test)/(total test) or 100% if all tests pass.
 
 I tested this grading script on all the examples java files given on the course website. Below are detailed outputs of the script when each java file is given as input.
