@@ -8,8 +8,7 @@ The bash script takes in a directory that contains a java file called ListExampl
 
 I tested this grading script on all the examples java files given on the course website. Below are detailed outputs of the sciprt given each java file.
 
-1. File from Lab 3
-------------------
+#1. File from Lab 3
 Expect behavior:
 - File: Found.
 - Compile: Successful.
