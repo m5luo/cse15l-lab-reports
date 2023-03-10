@@ -16,7 +16,7 @@ Expect behavior:
 - Test: Fail as the third `while` loop in the code is supposed to iterate through list 2 but updates the index of list 1.
 
 Screenshot of the actual test run:
-![lab3](lab3.png)
+![lab3](lab3_.png)
 
 2. Corrected File
 Expect behavior:
@@ -28,7 +28,6 @@ Expect behavior:
 Screenshot of the actual test run:
 ![corrected](corrected.png)
 
-
 3. File with Compile Error
 - File: Found.
 - Compile: Failed due to syntax error: missing semi-colon on line 15.
@@ -38,7 +37,6 @@ Screenshot of the actual test run:
 Screenshot of the actual test run:
 ![compile-error](compile-error.png)
 
-
 4. Different Method Signature
 - File: Found
 - Compile: Successful
@@ -46,8 +44,7 @@ Screenshot of the actual test run:
 - Test: Not applicable as bash script exists as soon as method signature did not match.
 
 Screenshot of the actual test run:
-![corrected](corrected.png)
-
+![signature](signature.png)
 
 5. Different Filename
 - File: Not found as filename does not match expected.
@@ -56,6 +53,7 @@ Screenshot of the actual test run:
 - Test: Not applicable as bas script exists as soon as file is not found.
 
 Screenshot of the actual test run:
+![filename](filename.png)
 
 6. File Nested Inside Another Directory
 - File: Not found as file is nested inside another directory.
@@ -64,4 +62,14 @@ Screenshot of the actual test run:
 - Test: Not applicable as bas script exists as soon as file is not found.
 
 Screenshot of the actual test run:
+![nested](nested.png)
+
+7. Subtle Mistakes in Code
+- File: Found.
+- Compile: Successful.
+- Method Signature: Match.
+- Test: Failed as this code avoids dulicates (while we allow for dupicate in our expected results). When the two arrays have the same element at the current index, the element it added to the new array once, then index of both array is increased, so duplicates are avoided.
+
+Screenshot of the actual test run:
+![subtle](subtle.png)
 
